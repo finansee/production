@@ -1,0 +1,400 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons > font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/3b1cc6c86a.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <title>Coach application - Finansee</title>
+  </head>
+  <body>
+    <!-- Header > navigation bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-none shadow-sm py-3 px-5"
+    >
+      <div class="container">
+        <!-- <a class="navbar-brand col-4 ms-2" href="#"
+          ><img src="..../assets/logos/Finansee final-02.png" alt=""
+        /></a> -->
+        <a class="navbar-brand col-4 ms-2" href="#">Finansee</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse col-8" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-5">
+              <a class="nav-link active" aria-current="page" href="/our-coaches/"
+                >Find a coach</a
+              >
+            </li>
+            <a href="/user/login/">
+            <button class="btn btn-success rounded-pill" type="submit">
+              Login
+            </button></a>
+            <a href="/user/register/">
+            <button class="btn btn-success rounded-pill mx-5" type="submit">
+              Get Started
+            </button></a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="bg-success id="hero">
+      <div class="container bg-success py-5 text-center text-white">
+        <h1 class="fw-lighter">Are you an expert in finance and management</h1>
+        <h1 class="fw-light my-4">Become a coach at Finansee</h1>
+        <div class="apply-btn d-flex">
+          <button
+            type="button"
+            class="btn btn-outline-success rounded-pill px-4 text-white border-2 m-auto fs-5"
+            data-bs-toggle="modal"
+            data-bs-target="#coachRegistrationModal"
+          >
+            Apply now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="container d-flex flex-column">
+      <!-- description -->
+      <section class="mt-5 pt-4 text-center w-50 m-auto">
+        <h2 class="mb-4">Learn while you share</h2>
+        <p>
+          As a financial coach, you will be compensated to work on people’s
+          financial dreams. Your job is to guide them in the world of finances,
+          by providing them coaching on investing, savings, budget, and whatever
+          else you think will help them achieve financial freedom!
+        </p>
+      </section>
+
+      <!-- benefits -->
+      <section class="mt-5 w-50 m-auto">
+        <h2 class="text-center mb-4">Benefits</h2>
+        <ul>
+          <li><p class="m-0">Work on your own schedule</p></li>
+          <li><p class="m-0">Competitive pay</p></li>
+          <li><p class="m-0">Get access to courses, training, and more</p></li>
+          <li><p class="m-0">Super convenient (Anywhere in the world)</p></li>
+          <li>
+            <p class="m-0">
+              No need to look for clients, we’ll take care of that for you
+            </p>
+          </li>
+          <li>
+            <p class="m-0">We provide you with our own platform for coaching</p>
+          </li>
+          <li>
+            <p class="m-0">
+              Build experience in the world of personal finance and financial
+              coaching
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- expected earnings -->
+      <section class="mt-5 w-50 m-auto">
+        <h2 class="text-center mb-4">Expected earnings</h2>
+        <div
+          class="box border border-2 rounded-3 border-success"
+          style="height: 15rem; width: 100%"
+        >
+        <code>This will be the calculator</code>
+      </div>
+      </section>
+
+      <!-- eligibility criteria -->
+      <section class="mt-5 pt-4 w-50 m-auto">
+        <h2 class="mb-4 text-center">Eligibility criteria</h2>
+        <ul>
+          <li><p class="m-0">Must be at least 18 years old</p></li>
+          <li><p class="m-0">Have an SSN or ITIN</p></li>
+          <li>
+            <p class="m-0">
+              At least one year with experience in investing and personal
+              finances
+            </p>
+          </li>
+          <li><p class="m-0">No certification needed</p></li>
+          <li>
+            <p class="m-0">
+              You will need to pass a test on the areas of interest
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- application button -->
+      <div class="apply-btn d-flex mt-5">
+        <button
+          type="button"
+          class="btn btn-success rounded-pill px-4 m-auto"
+          data-bs-toggle="modal"
+          data-bs-target="#coachRegistrationModal"
+        >
+          <p class="m-0">Apply now</p>
+        </button>
+      </div>
+    </div>
+    <!-- modal section for coach registration -->
+    <div
+      class="modal fade"
+      id="coachRegistrationModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- modal title -->
+            <h5 class="modal-title" id="exampleModalLabel">
+              Resgister to become a coach
+            </h5>
+            <!-- modal close button -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- modal body -->
+          <div class="modal-body py-0">
+            <form class="p-4">
+              <!-- full name -->
+              <div class="mb-4">
+                <input
+                  type="text"
+                  class="form-control rounded-pill border-3 border-success ps-4 fs-5"
+                  id="name"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+              <!-- email address -->
+              <div class="mb-4">
+                <input
+                  type="email"
+                  class="form-control rounded-pill border-3 border-success ps-4 fs-5"
+                  id="email"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+              <!-- phone number -->
+              <div class="mb-4">
+                <input
+                  type="tel"
+                  class="form-control rounded-pill border-3 border-success ps-4 fs-5"
+                  id="phone"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+              <!-- mailing address -->
+              <div class="mb-4">
+                <input
+                  type="text"
+                  class="form-control rounded-pill border-3 border-success ps-4 fs-5"
+                  id="address"
+                  placeholder="Mailing address"
+                  required
+                />
+              </div>
+              <!-- level of education -->
+              <div class="mb-4">
+                <select
+                  class="rounded-pill border-3 border-success ps-4 fs-5 w-100"
+                  name="education"
+                  id="education"
+                  style="height: 47px"
+                >
+                  <option value="none">-- Level of education --</option>
+                  <option value="highSchoolGED">
+                    High School or GED equivalent
+                  </option>
+                  <option value="associatesDegree">Associate's Degree</option>
+                  <option value="bachelorsDegree">Bachelor’s Degree</option>
+                  <option value="mastersDegree">Master’s Degree</option>
+                  <option value="doctoratesDegree">Doctorate’s Degree</option>
+                </select>
+              </div>
+              <!-- input files -->
+              <div class="mb-4">
+                <label
+                  class="fs-5 ms-2"
+                  for="importantFiles"
+                  style="font-weight: 600; color: rgba(0, 0, 0, 0.5)"
+                  >Copy of ID</label
+                >
+                <input
+                  type="file"
+                  class="form-control rounded-pill border-3 border-success"
+                  id="importantFiles"
+                  multiple
+                  required
+                />
+              </div>
+              <!-- note for the applicants -->
+              <p class="fs-6 ms-2">
+                <b>Please note: </b>If approved, payment information will also
+                be acquired, such as SSN, ITIN, and bank account information.
+              </p>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <!-- modal close button in footer section -->
+            <button
+              type="button"
+              class="btn btn-danger rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <!-- modal submit button in footer section -->
+            <button type="button" class="btn btn-success rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-success mt-5" id="footer-elements">
+      <div class="container">
+        <div class="row py-5 mx-0" id="footer-elements">
+          <!-- logo & details -->
+          <div class="col-2 pe-0">
+            <img
+              src="{% static 'images/logos/finansee-footer.png' %}"
+              alt=""
+              style="width: 145px; height: 115px"
+            />
+          </div>
+          <div class="col-4 ps-0 text-white">
+            <h5 class="mt-2">Finansee</h5>
+            <p class="mx-auto mb-2">Copyright &copy; 2021</p>
+            <a
+              href="#"
+              class="m-auto fs-5 fw-lighter text-decoration-none text-white"
+              >Terms of Service</a
+            >
+            |
+            <a
+              href="#"
+              class="m-auto fs-5 fw-lighter text-decoration-none text-white"
+              >Privacy Policy</a
+            >
+          </div>
+          <!-- links -->
+          <div class="col-3">
+            <a
+              href="/"
+              class="d-block text-white text-decoration-none fs-6 mt-2 mb-0"
+              >Home</a
+            >
+            <a href="#" class="d-block text-white text-decoration-none fs-6 m-0"
+              >About us</a
+            >
+            <a href="#" class="d-block text-white text-decoration-none fs-6 m-0"
+              >Contact us</a
+            >
+            <a
+              href="/our-coaches/"
+              class="d-block text-white text-decoration-none fs-6 m-0"
+              >Find a coach</a
+            >
+            <a
+              href="#"
+              class="d-block text-white text-decoration-none fs-6 m-0"
+              >Become a coach</a
+            >
+          </div>
+          <!-- contacts -->
+          <div class="col-3 text-white">
+            <p class="mt-2 mb-auto">help@finansee.com</p>
+            <p class="my-2">+55 99 9999-9999</p>
+            <div>
+              <a
+                href="https://www.linkedin.com/"
+                class="fab fa-linkedin-in text-decoration-none text-white"
+                target="_blank"
+              ></a>
+              <a
+                href="https://twitter.com/"
+                class="fab fa-twitter text-decoration-none text-white mx-3"
+                target="_blank"
+              ></a>
+              <a
+                href="https://www.facebook.com/"
+                class="fab fa-facebook-f text-decoration-none text-white"
+                target="_blank"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

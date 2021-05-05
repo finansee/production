@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons > font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/3b1cc6c86a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Quiz</title>
+  </head>
+  <body>
+    <!-- Header > navigation bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-none shadow-sm py-3 px-5"
+    >
+      <div class="container">
+        <!-- <a class="navbar-brand col-4 ms-2" href="#"
+          ><img src="..../assets/logos/Finansee final-02.png" alt=""
+        /></a> -->
+        <a class="navbar-brand col-4 ms-2" href="#">Finansee</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse col-8" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Find a coach</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active mx-5" aria-current="page" href="#"
+                >Become a coach</a
+              >
+            </li>
+            <button class="btn btn-success rounded-pill" type="submit">
+              Login
+            </button>
+            <button class="btn btn-success rounded-pill mx-5" type="submit">
+              Get Started
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- quiz section -->
+    <div class="container mt-5">
+      <!-- title -->
+      <section class="text-center my-5 py-4">
+        <h1>Let us know a bit about you!</h1>
+        <p>
+          “This information is being taken to select the
+          <b>best financial coach</b> for you”
+        </p>
+      </section>
+      <!-- quiz > form section -->
+      <div class="container w-75" id="questionaire">
+        <form>
+          <ol>
+            <li id="q1">
+              <h5>
+                What sentence best describes you when it comes to investing?
+              </h5>
+              <div class="form-check">
+                <!-- option 1 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1"
+                  id="q1Radios1"
+                  value="q1option1"
+                />
+                <label class="form-check-label" for="q1Radios1">
+                  I follow other people’s advice on how to invest as long as I
+                  trust them
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 2 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1"
+                  id="q1Radios2"
+                  value="q1option2"
+                />
+                <label class="form-check-label" for="q1Radios2">
+                  I look for safety in my investments. I am willing to give up
+                  some return as long as my investments are safe
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 3 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1"
+                  id="q1Radios3"
+                  value="q1option3"
+                />
+                <label class="form-check-label" for="q1Radios3">
+                  I invest in things that I know well.
+                </label>
+              </div>
+            </li>
+            <li class="mt-4" id="q2">
+              <h5>What do you prioritize when you plan to invest?</h5>
+              <div class="form-check">
+                <!-- option 1 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2"
+                  id="q2Radios1"
+                  value="q2option1"
+                />
+                <label class="form-check-label" for="q2Radios1">
+                  High rates of return and diversification
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 2 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2"
+                  id="q2Radios2"
+                  value="q2option2"
+                />
+                <label class="form-check-label" for="q2Radios2">
+                  Comfort and safety
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 3 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2"
+                  id="q2Radios3"
+                  value="q2option3"
+                />
+                <label class="form-check-label" for="q2Radios3">
+                  Constant but small gains
+                </label>
+              </div>
+            </li>
+            <li class="mt-4" id="q3">
+              <h5>What is your experience with investing?</h5>
+              <div class="form-check">
+                <!-- option 1 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3"
+                  id="q3Radios1"
+                  value="q3option1"
+                />
+                <label class="form-check-label" for="q3Radios1">
+                  I have some knowledge in markets and investing
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 2 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3"
+                  id="q3Radios2"
+                  value="q3option2"
+                />
+                <label class="form-check-label" for="q3Radios2">
+                  I have good knowledge of markets and investing, but I lack in
+                  some important areas of finance
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 3 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3"
+                  id="q3Radios3"
+                  value="q3option3"
+                />
+                <label class="form-check-label" for="q3Radios3">
+                  I have extensive knowledge in markets and investing.
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 4 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3"
+                  id="q3Radios4"
+                  value="q3option4"
+                />
+                <label class="form-check-label" for="q3Radios4"> None </label>
+              </div>
+            </li>
+            <li class="mt-4" id="q4">
+              <h5>
+                What would you do if your investments’ returns suddenly dropped
+                significantly?
+              </h5>
+              <div class="form-check">
+                <!-- option 1 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q4"
+                  id="q4Radios1"
+                  value="q4option1"
+                />
+                <label class="form-check-label" for="q4Radios1">
+                  Close all my positions (sell) immediately
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 2 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q4"
+                  id="q4Radios2"
+                  value="q4option2"
+                />
+                <label class="form-check-label" for="q4Radios2">
+                  Close some of my positions (sell) immediately, but still hold
+                  some positions
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 3 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q4"
+                  id="q4Radios3"
+                  value="q4option3"
+                />
+                <label class="form-check-label" for="q4Radios3">
+                  Hold my positions, as I am tolerant to these drops
+                </label>
+              </div>
+            </li>
+            <li class="mt-4" id="q5">
+              <h5>For how long do you plan to keep your money invested?</h5>
+              <div class="form-check">
+                <!-- option 1 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q5"
+                  id="q5Radios1"
+                  value="q5option1"
+                />
+                <label class="form-check-label" for="q5Radios1">
+                  Less than a year
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 2 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q5"
+                  id="q5Radios2"
+                  value="q5option2"
+                />
+                <label class="form-check-label" for="q5Radios2">
+                  1-3 years
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 3 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q5"
+                  id="q5Radios3"
+                  value="q5option3"
+                />
+                <label class="form-check-label" for="q5Radios3">
+                  3-5 years
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 4 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q5"
+                  id="q5Radios4"
+                  value="q5option4"
+                />
+                <label class="form-check-label" for="q5Radios4">
+                  5+ years
+                </label>
+              </div>
+            </li>
+            <li class="mt-4" id="q6">
+              <h5>What is your primary goal when it comes to investing?</h5>
+              <div class="form-check">
+                <!-- option 1 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q6"
+                  id="q6Radios1"
+                  value="q6option1"
+                />
+                <label class="form-check-label" for="q6Radios1">
+                  Long term growth, smaller rates of return, but smaller risks
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 2 -->
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q6"
+                  id="q6Radios2"
+                  value="q6option2"
+                />
+                <label class="form-check-label" for="q6Radios2">
+                  Short term growth, higher rates of return, but higher risks
+                </label>
+              </div>
+            </li>
+            <li class="mt-4" id="q7">
+              <h5>Please list all areas that interest you:</h5>
+              <div class="form-check">
+                <!-- option 1 -->
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Check1"
+                  value="stocks"
+                />
+                <label class="form-check-label" for="Check1"> Stocks </label>
+              </div>
+              <div class="form-check">
+                <!-- option 2 -->
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Check2"
+                  value="mutualFunds"
+                />
+                <label class="form-check-label" for="Check2">
+                  Mutual Funds
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 3 -->
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Check3"
+                  value="etfs"
+                />
+                <label class="form-check-label" for="Check3"> ETFs </label>
+              </div>
+              <div class="form-check">
+                <!-- option 4 -->
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Check4"
+                  value="cryptocurrency"
+                />
+                <label class="form-check-label" for="Check4">
+                  Cryptocurrency
+                </label>
+              </div>
+              <div class="form-check">
+                <!-- option 5 -->
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Check5"
+                  value="reits"
+                />
+                <label class="form-check-label" for="Check5"> REITs </label>
+              </div>
+              <div class="form-check">
+                <!-- option 6 -->
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Check6"
+                  value="bonds"
+                />
+                <label class="form-check-label" for="Check6"> Bonds </label>
+              </div>
+              <div class="form-check">
+                <!-- option 7 -->
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="Check7"
+                  value="options"
+                />
+                <label class="form-check-label" for="Check7"> Options </label>
+              </div>
+            </li>
+          </ol>
+          <button
+            class="btn btn-outline-success rounded-pill ms-3 mt-4"
+            type="submit"
+            style="width: 135px"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-success mt-5" id="footer-elements">
+      <div class="container">
+        <div class="row py-5 mx-0" id="footer-elements">
+          <!-- logo & details -->
+          <div class="col-2 pe-0">
+            <img
+              src="{% static 'images/logos/finansee-footer.png' %}"
+              alt=""
+              style="width: 145px; height: 115px"
+            />
+          </div>
+          <div class="col-4 ps-0 text-white">
+            <h5 class="mt-2">Finansee</h5>
+            <p class="m-auto">Copyright &copy; 2021</p>
+            <p class="m-auto">Terms of Service | Privacy Policy</p>
+          </div>
+          <!-- links -->
+          <div class="col-3">
+            <a
+              href="{% static '#' %}"
+              class="d-block text-white text-decoration-none mt-2 mb-0"
+              >Home</a
+            >
+            <a
+              href="{% static '#' %}"
+              class="d-block text-white text-decoration-none m-0"
+              >Get Started</a
+            >
+            <a
+              href="{% static '#' %}"
+              class="d-block text-white text-decoration-none m-0"
+              >Find a coach</a
+            >
+            <a
+              href="{% static '#' %}"
+              class="d-block text-white text-decoration-none m-0"
+              >Become a coach</a
+            >
+          </div>
+          <!-- contacts -->
+          <div class="col-3 text-white">
+            <p class="mt-2 mb-auto">help@finansee.com</p>
+            <p class="my-2">+55 99 9999-9999</p>
+            <div>
+              <a
+                href="https://www.linkedin.com/"
+                class="fab fa-linkedin-in text-decoration-none text-white"
+              ></a>
+              <a
+                href="https://twitter.com/"
+                class="fab fa-twitter text-decoration-none text-white mx-3"
+              ></a>
+              <a
+                href="https://www.facebook.com/"
+                class="fab fa-facebook-f text-decoration-none text-white"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
